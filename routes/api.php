@@ -19,6 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::prefix('v1')->group(function () {
-    Route::controller('users', 'UserController')->name('users');
-    // Route::post('users', UserController);
+    Route::post('users', 'UserController@create')->name('users');
 });
