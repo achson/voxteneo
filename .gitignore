@@ -1,0 +1,3 @@
+# List Ignored Files
+.env.testing
+.env
